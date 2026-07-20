@@ -56,6 +56,11 @@ export type Project = {
     label: Localized;
     detail: Localized;
   }[];
+  /** Interface gallery — real screens, annotated. */
+  screens?: {
+    caption: Localized;
+    media: MediaAsset;
+  }[];
 };
 
 export type ExpertisePillar = {

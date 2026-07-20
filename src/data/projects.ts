@@ -118,6 +118,72 @@ export const projects: Project[] = [
         url: "https://github.com/Kawakvmi/creatorflow",
       },
     ],
+    screens: [
+      {
+        caption: {
+          pt: "Kanban editorial — seis estágios, do roteiro ao publicado",
+          en: "Editorial Kanban — six stages, from script to published",
+        },
+        media: {
+          type: "image",
+          src: "",
+          alt: {
+            pt: "Quadro Kanban do CreatorFlow com colunas de produção",
+            en: "CreatorFlow Kanban board with production columns",
+          },
+          width: 1600,
+          height: 1000,
+        },
+      },
+      {
+        caption: {
+          pt: "Card com Guidebook — brainstorm, referências e imagens no lugar da peça",
+          en: "Card with Guidebook — brainstorm, references and images where the piece lives",
+        },
+        media: {
+          type: "image",
+          src: "",
+          alt: {
+            pt: "Detalhe do card com o Guidebook aberto",
+            en: "Card detail with the Guidebook open",
+          },
+          width: 1600,
+          height: 1000,
+        },
+      },
+      {
+        caption: {
+          pt: "Calendário editorial — prazos vencidos destacados",
+          en: "Editorial calendar — overdue deadlines highlighted",
+        },
+        media: {
+          type: "image",
+          src: "",
+          alt: {
+            pt: "Visão mensal do calendário editorial",
+            en: "Monthly view of the editorial calendar",
+          },
+          width: 1600,
+          height: 1000,
+        },
+      },
+      {
+        caption: {
+          pt: "Dashboard — KPIs, gráfico e progresso de campanhas",
+          en: "Dashboard — KPIs, chart and campaign progress",
+        },
+        media: {
+          type: "image",
+          src: "",
+          alt: {
+            pt: "Dashboard do CreatorFlow com indicadores",
+            en: "CreatorFlow dashboard with indicators",
+          },
+          width: 1600,
+          height: 1000,
+        },
+      },
+    ],
   },
 
   {
