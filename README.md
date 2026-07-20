@@ -127,11 +127,29 @@ Com `prefers-reduced-motion` ligado, não dá autoplay e mostra os controles.
 - [`src/data/navigation.ts`](src/data/navigation.ts) — itens do menu.
 - Textos de interface (rótulos de seção, botões): [`src/lib/i18n/dictionaries.ts`](src/lib/i18n/dictionaries.ts).
 
-### Publicar o CV
+### Foto do perfil (About)
 
-Coloque o PDF em `public/` (ex.: `public/dereck-kawakami-cv.pdf`) e em `social.ts`
-troque `cv: null` por `cv: "/dereck-kawakami-cv.pdf"`. O botão “Baixar CV” aparece sozinho.
-Enquanto for `null`, o botão fica oculto (sem link morto).
+Salve a foto em `public/media/` (ex.: `public/media/dereck.jpg` ou `.webp`) e em
+[`src/data/profile.ts`](src/data/profile.ts) troque `photo.src: ""` por
+`photo.src: "/media/dereck.jpg"`. Enquanto vazio, mostra um placeholder com o
+monograma (nunca imagem quebrada).
+
+### CV (`/cv` + PDF)
+
+O currículo tem uma página web em **`/cv`** e um PDF baixável em
+`public/dereck-kawakami-cv.pdf` (é o que o botão “Baixar CV” usa). O conteúdo vem
+de [`src/data/cv.ts`](src/data/cv.ts).
+
+Para **atualizar o CV**: edite `src/data/cv.ts` e depois **regenere o PDF** a partir
+da página `/cv` (o PDF é um snapshot da página):
+
+1. `npm run dev`
+2. Abra `http://localhost:3000/cv` e clique em **Imprimir → Salvar como PDF**
+   (papel A4, margens “Nenhuma”, “Gráficos de plano de fundo” ligado), salvando
+   por cima de `public/dereck-kawakami-cv.pdf`.
+
+O endereço completo foi omitido por privacidade (a página e o PDF são públicos).
+Para adicioná-lo em uma candidatura formal, inclua em `cv.contact`.
 
 ---
 
@@ -186,7 +204,9 @@ Vercel Analytics + Speed Insights não estão incluídos. Se quiser, instale
 
 Itens a substituir quando os arquivos estiverem prontos (hoje em placeholder identificado):
 
-- [ ] **Vídeo/screenshots do CreatorFlow** (cover + 4 telas: Kanban, Card/Guidebook, Calendário, Dashboard).
-- [ ] **Visuais adaptados** do case corporativo (confidencial — sem nome/logo/dados do cliente).
-- [ ] **CV em PDF** (`public/` + `social.ts`).
+- [ ] **Foto do perfil** em `public/media/dereck.jpg` + `photo.src` em `profile.ts`.
+- [ ] **Vídeo do CreatorFlow** em `public/media/` (`.mp4` ou `.webm`) + `cover.src`/`poster` em `projects.ts`.
+- [ ] **Screenshots do CreatorFlow** (4 telas: Kanban, Card/Guidebook, Calendário, Dashboard) em `screens`.
+- [ ] **Visuais adaptados** do case corporativo (confidencial, sem nome/logo/dados do cliente).
 - [ ] Confirmar o **ano** exibido em cada case (`year` em `projects.ts`).
+- [x] **CV** especializado em `/cv` + PDF em `public/dereck-kawakami-cv.pdf`.
