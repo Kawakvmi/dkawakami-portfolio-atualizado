@@ -6,8 +6,8 @@ export const expertise: ExpertisePillar[] = [
     index: "01",
     title: { pt: "UX/UI & Product Design", en: "UX/UI & Product Design" },
     description: {
-      pt: "Interfaces, design systems e fluxos que sustentam produtos reais — do problema à arquitetura de informação, dos protótipos aos componentes que escalam.",
-      en: "Interfaces, design systems and flows that hold real products together — from the problem to information architecture, from prototypes to components that scale.",
+      pt: "Interfaces, design systems e fluxos que sustentam produtos reais, do problema à arquitetura de informação, dos protótipos aos componentes que escalam.",
+      en: "Interfaces, design systems and flows that hold real products together, from the problem to information architecture, from prototypes to components that scale.",
     },
     practices: {
       pt: [
@@ -29,8 +29,8 @@ export const expertise: ExpertisePillar[] = [
     index: "02",
     title: { pt: "Front-End & Interactive", en: "Front-End & Interactive" },
     description: {
-      pt: "Implementação em React e Next.js com motion refinado e atenção a performance e acessibilidade — o design entregue como código, não como imagem.",
-      en: "React and Next.js implementation with refined motion and care for performance and accessibility — design delivered as code, not as a picture.",
+      pt: "Implementação em React e Next.js com motion refinado e atenção a performance e acessibilidade. O design entregue como código, não como imagem.",
+      en: "React and Next.js implementation with refined motion and care for performance and accessibility. Design delivered as code, not as a picture.",
     },
     practices: {
       pt: [
@@ -52,8 +52,8 @@ export const expertise: ExpertisePillar[] = [
     index: "03",
     title: { pt: "Content & Communication", en: "Content & Communication" },
     description: {
-      pt: "Estratégia editorial, campanhas e comunicação — do roteiro e da direção de vídeo à identidade visual e aos materiais que fazem a mensagem chegar.",
-      en: "Editorial strategy, campaigns and communication — from scripting and video direction to visual identity and the materials that land the message.",
+      pt: "Estratégia editorial, campanhas e comunicação, do roteiro e da direção de vídeo à identidade visual e aos materiais que fazem a mensagem chegar.",
+      en: "Editorial strategy, campaigns and communication, from scripting and video direction to visual identity and the materials that land the message.",
     },
     practices: {
       pt: [
@@ -75,8 +75,8 @@ export const expertise: ExpertisePillar[] = [
     index: "04",
     title: { pt: "AI & Automation", en: "AI & Automation" },
     description: {
-      pt: "Pipelines assistidos por IA e automações que assumem o repetitivo — scraping, geração de mídia e distribuição — para liberar tempo ao que exige julgamento.",
-      en: "AI-assisted pipelines and automations that take over the repetitive — scraping, media generation and distribution — to free time for what needs judgement.",
+      pt: "Pipelines assistidos por IA e automações que assumem o repetitivo (scraping, geração de mídia e distribuição) para liberar tempo ao que exige julgamento.",
+      en: "AI-assisted pipelines and automations that take over the repetitive (scraping, media generation and distribution) to free time for what needs judgement.",
     },
     practices: {
       pt: [
@@ -108,8 +108,8 @@ export const process: ProcessStep[] = [
     index: "02",
     title: { pt: "Desenhar", en: "Design" },
     description: {
-      pt: "Estrutura, hierarquia e sistema visual — decidindo no protótipo o que seria caro decidir no código.",
-      en: "Structure, hierarchy and visual system — deciding in the prototype what would be costly to decide in code.",
+      pt: "Estrutura, hierarquia e sistema visual, decidindo no protótipo o que seria caro decidir no código.",
+      en: "Structure, hierarchy and visual system, deciding in the prototype what would be costly to decide in code.",
     },
   },
   {
@@ -124,8 +124,8 @@ export const process: ProcessStep[] = [
     index: "04",
     title: { pt: "Automatizar", en: "Automate" },
     description: {
-      pt: "Identificar o repetitivo e transformá-lo em sistema — ferramentas e pipelines que sustentam o trabalho depois da entrega.",
-      en: "Spot the repetitive and turn it into a system — tools and pipelines that keep the work alive after handoff.",
+      pt: "Identificar o repetitivo e transformá-lo em sistema, ferramentas e pipelines que sustentam o trabalho depois da entrega.",
+      en: "Spot the repetitive and turn it into a system, tools and pipelines that keep the work alive after handoff.",
     },
   },
 ];

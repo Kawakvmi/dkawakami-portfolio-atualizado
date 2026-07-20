@@ -27,7 +27,7 @@ const pt = {
     eyebrow: "Expertise",
     heading: "Quatro frentes, um só par de mãos",
     intro:
-      "Não escolho entre desenhar, construir e comunicar — as quatro frentes operam juntas em cada projeto.",
+      "Não escolho entre desenhar, construir e comunicar. As quatro frentes operam juntas em cada projeto.",
   },
 
   process: {
@@ -118,7 +118,7 @@ const en: Dictionary = {
     eyebrow: "Expertise",
     heading: "Four disciplines, one pair of hands",
     intro:
-      "I don't choose between designing, building and communicating — the four disciplines work together on every project.",
+      "I don't choose between designing, building and communicating. The four disciplines work together on every project.",
   },
 
   process: {

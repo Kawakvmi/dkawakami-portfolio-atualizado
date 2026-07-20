@@ -5,7 +5,7 @@ import type { Project } from "@/lib/types";
  * README/repo; the automation and corporate cases describe real work Dereck
  * built, with the corporate client kept confidential (visuals adapted, no
  * names, no unauthorized metrics). Media marked with an empty `src` renders a
- * labeled placeholder until the real asset is added under /public.
+ * labeled icon placeholder until the real asset is added under /public.
  */
 export const projects: Project[] = [
   {
@@ -38,8 +38,8 @@ export const projects: Project[] = [
       src: "",
       poster: "",
       alt: {
-        pt: "Interface do CreatorFlow — quadro Kanban editorial em tema escuro",
-        en: "CreatorFlow interface — editorial Kanban board in dark theme",
+        pt: "Interface do CreatorFlow, quadro Kanban editorial em tema escuro",
+        en: "CreatorFlow interface, editorial Kanban board in dark theme",
       },
       width: 1600,
       height: 1000,
@@ -47,24 +47,24 @@ export const projects: Project[] = [
     featured: true,
     hasCaseStudy: true,
     summary: {
-      pt: "Kanban editorial, calendário e um Guidebook dentro de cada card — um sistema para creators planejarem e produzirem conteúdo sem sair do fluxo.",
-      en: "Editorial Kanban, calendar and a Guidebook inside every card — a system for creators to plan and produce content without leaving the flow.",
+      pt: "Kanban editorial, calendário e um Guidebook dentro de cada card. Um sistema para creators planejarem e produzirem conteúdo sem sair do fluxo.",
+      en: "Editorial Kanban, calendar and a Guidebook inside every card. A system for creators to plan and produce content without leaving the flow.",
     },
     problem: {
-      pt: "Times de conteúdo vivem espalhados entre planilha de pauta, gerenciador de tarefas, chat de aprovação e uma pasta solta de referências. O contexto de cada peça — briefing, tom, imagens de apoio — mora longe de onde a peça é de fato produzida.",
-      en: "Content teams live scattered across a planning spreadsheet, a task manager, an approval chat and a loose folder of references. Each piece's context — brief, tone, supporting images — lives far from where the piece is actually made.",
+      pt: "Times de conteúdo vivem espalhados entre planilha de pauta, gerenciador de tarefas, chat de aprovação e uma pasta solta de referências. O contexto de cada peça (briefing, tom, imagens de apoio) mora longe de onde a peça é de fato produzida.",
+      en: "Content teams live scattered across a planning spreadsheet, a task manager, an approval chat and a loose folder of references. Each piece's context (brief, tone, supporting images) lives far from where the piece is actually made.",
     },
     strategy: {
-      pt: "Concentrar produção e contexto num só lugar. Em vez de mais um Kanban genérico, um Kanban editorial em que cada card carrega o próprio caderno de brainstorm — texto e imagens — dentro dele.",
-      en: "Bring production and context into one place. Not another generic Kanban, but an editorial one where each card carries its own brainstorm notebook — text and images — inside it.",
+      pt: "Concentrar produção e contexto num só lugar. Em vez de mais um Kanban genérico, um Kanban editorial em que cada card carrega o próprio caderno de brainstorm, com texto e imagens, dentro dele.",
+      en: "Bring production and context into one place. Not another generic Kanban, but an editorial one where each card carries its own brainstorm notebook, with text and images, inside it.",
     },
     solution: {
-      pt: "Um quadro de seis estágios (do roteiro ao publicado) com checklists que mudam conforme o tipo de conteúdo e um fluxo de aprovação. Ao lado, um calendário editorial que destaca prazos vencidos, um dashboard de KPIs, campanhas agrupadas e uma command palette para navegar em Cmd+K.",
-      en: "A six-stage board (script to published) with checklists that adapt to the content type and an approval flow. Alongside it, an editorial calendar that highlights late deadlines, a KPI dashboard, grouped campaigns and a command palette to navigate with Cmd+K.",
+      pt: "Um quadro de seis estágios, do roteiro ao publicado, com checklists que mudam conforme o tipo de conteúdo e um fluxo de aprovação. Ao lado, um calendário editorial que destaca prazos vencidos, um dashboard de KPIs, campanhas agrupadas e uma command palette para navegar em Cmd+K.",
+      en: "A six-stage board, from script to published, with checklists that adapt to the content type and an approval flow. Alongside it, an editorial calendar that highlights late deadlines, a KPI dashboard, grouped campaigns and a command palette to navigate with Cmd+K.",
     },
     impact: {
-      pt: "Projeto de portfólio com demo pública. O diferencial — o Guidebook dentro do card — resolve exatamente o problema que motivou o produto: o contexto acompanha a peça, em vez de ficar em outra aba.",
-      en: "A portfolio project with a public demo. The differentiator — the in-card Guidebook — solves the very problem that motivated the product: context travels with the piece instead of sitting in another tab.",
+      pt: "Projeto de portfólio com demo pública. O diferencial, o Guidebook dentro do card, resolve exatamente o problema que motivou o produto: o contexto acompanha a peça, em vez de ficar em outra aba.",
+      en: "A portfolio project with a public demo. The differentiator, the in-card Guidebook, solves the very problem that motivated the product: context travels with the piece instead of sitting in another tab.",
     },
     decisions: [
       {
@@ -93,8 +93,8 @@ export const projects: Project[] = [
           en: "A calendar that flags delay",
         },
         body: {
-          pt: "Prazos vencidos são destacados visualmente no calendário — a informação crítica aparece sozinha, sem exigir um relatório.",
-          en: "Overdue deadlines are visually highlighted on the calendar — the critical information surfaces on its own, no report required.",
+          pt: "Prazos vencidos são destacados visualmente no calendário. A informação crítica aparece sozinha, sem exigir um relatório.",
+          en: "Overdue deadlines are visually highlighted on the calendar. The critical information surfaces on its own, no report required.",
         },
       },
       {
@@ -121,8 +121,8 @@ export const projects: Project[] = [
     screens: [
       {
         caption: {
-          pt: "Kanban editorial — seis estágios, do roteiro ao publicado",
-          en: "Editorial Kanban — six stages, from script to published",
+          pt: "Kanban editorial, seis estágios do roteiro ao publicado",
+          en: "Editorial Kanban, six stages from script to published",
         },
         media: {
           type: "image",
@@ -137,8 +137,8 @@ export const projects: Project[] = [
       },
       {
         caption: {
-          pt: "Card com Guidebook — brainstorm, referências e imagens no lugar da peça",
-          en: "Card with Guidebook — brainstorm, references and images where the piece lives",
+          pt: "Card com Guidebook: brainstorm, referências e imagens no lugar da peça",
+          en: "Card with Guidebook: brainstorm, references and images where the piece lives",
         },
         media: {
           type: "image",
@@ -153,8 +153,8 @@ export const projects: Project[] = [
       },
       {
         caption: {
-          pt: "Calendário editorial — prazos vencidos destacados",
-          en: "Editorial calendar — overdue deadlines highlighted",
+          pt: "Calendário editorial com prazos vencidos destacados",
+          en: "Editorial calendar with overdue deadlines highlighted",
         },
         media: {
           type: "image",
@@ -169,8 +169,8 @@ export const projects: Project[] = [
       },
       {
         caption: {
-          pt: "Dashboard — KPIs, gráfico e progresso de campanhas",
-          en: "Dashboard — KPIs, chart and campaign progress",
+          pt: "Dashboard com KPIs, gráfico e progresso de campanhas",
+          en: "Dashboard with KPIs, chart and campaign progress",
         },
         media: {
           type: "image",
@@ -224,8 +224,8 @@ export const projects: Project[] = [
       en: "Systems that take over the repetitive: a bot that collects offers, formats and posts on its own, and a pipeline that turns scripts into video with AI.",
     },
     problem: {
-      pt: "Distribuir conteúdo com constância — dezenas de posts e vídeos — é inviável na mão. O gargalo não é a ideia; é a repetição: coletar, formatar, publicar, repetir.",
-      en: "Distributing content consistently — dozens of posts and videos — is unfeasible by hand. The bottleneck isn't the idea; it's the repetition: collect, format, publish, repeat.",
+      pt: "Distribuir conteúdo com constância, dezenas de posts e vídeos, é inviável na mão. O gargalo não é a ideia; é a repetição: coletar, formatar, publicar, repetir.",
+      en: "Distributing content consistently, dozens of posts and videos, is unfeasible by hand. The bottleneck isn't the idea; it's the repetition: collect, format, publish, repeat.",
     },
     strategy: {
       pt: "Separar o que exige julgamento do que é mecânico e entregar o mecânico a um sistema. Cada etapa repetível vira um passo automatizado, observável e ajustável.",
@@ -236,8 +236,8 @@ export const projects: Project[] = [
       en: "Two pipelines. A Python bot scrapes offers, removes duplicates, formats the message and posts to channels on a schedule. In parallel, a video pipeline starts from a script, generates AI narration, assembles with FFmpeg and exports publish-ready cuts.",
     },
     impact: {
-      pt: "Um volume que seria impossível manualmente passa a rodar de forma constante — com a pessoa no papel de curadoria e ajuste, não de execução repetida.",
-      en: "A volume that would be impossible by hand now runs consistently — with the person curating and tuning, not repeating execution.",
+      pt: "Um volume que seria impossível manualmente passa a rodar de forma constante, com a pessoa no papel de curadoria e ajuste, não de execução repetida.",
+      en: "A volume that would be impossible by hand now runs consistently, with the person curating and tuning, not repeating execution.",
     },
     pipeline: [
       {
@@ -294,7 +294,12 @@ export const projects: Project[] = [
       pt: ["Design & layout", "Vídeo & motion", "Comunicação interna"],
       en: ["Design & layout", "Video & motion", "Internal communication"],
     },
-    technologies: ["Adobe Premiere", "Illustrator", "Photoshop", "Figma"],
+    technologies: [
+      "Adobe Premiere",
+      "After Effects",
+      "Illustrator",
+      "Photoshop",
+    ],
     cover: {
       type: "image",
       src: "",
@@ -309,20 +314,20 @@ export const projects: Project[] = [
     confidential: true,
     hasCaseStudy: true,
     summary: {
-      pt: "Layout, design e vídeo para comunicação corporativa — identidade, campanhas internas e materiais on e offline. Cliente sob confidencialidade; visuais adaptados.",
-      en: "Layout, design and video for corporate communication — identity, internal campaigns and on/offline materials. Client under NDA; visuals adapted.",
+      pt: "Layout, design e vídeo para comunicação corporativa: identidade, campanhas internas e materiais on e offline. Cliente sob confidencialidade; visuais adaptados.",
+      en: "Layout, design and video for corporate communication: identity, internal campaigns and on/offline materials. Client under NDA; visuals adapted.",
     },
     problem: {
-      pt: "Comunicar de forma clara e consistente dentro de uma organização — para públicos internos e externos — através de muitos formatos e canais diferentes.",
-      en: "Communicating clearly and consistently inside an organization — to internal and external audiences — across many different formats and channels.",
+      pt: "Comunicar de forma clara e consistente dentro de uma organização, para públicos internos e externos, através de muitos formatos e canais diferentes.",
+      en: "Communicating clearly and consistently inside an organization, to internal and external audiences, across many different formats and channels.",
     },
     strategy: {
       pt: "Manter uma linguagem visual coerente entre peças digitais, vídeo e material impresso, de modo que cada entrega reforce a mesma identidade.",
       en: "Keep a coherent visual language across digital pieces, video and print, so every deliverable reinforces the same identity.",
     },
     solution: {
-      pt: "Layout e design de materiais de comunicação, edição e motion de vídeos institucionais e peças de campanha on e offline — sempre a partir de um sistema visual comum.",
-      en: "Layout and design of communication materials, editing and motion for institutional video, and on/offline campaign pieces — always from a shared visual system.",
+      pt: "Layout e design de materiais de comunicação, edição e motion de vídeos institucionais e peças de campanha on e offline, sempre a partir de um sistema visual comum.",
+      en: "Layout and design of communication materials, editing and motion for institutional video, and on/offline campaign pieces, always from a shared visual system.",
     },
     impact: {
       pt: "Comunicação com aparência consistente e profissional entre canais. Nome do cliente, dados e resultados específicos são confidenciais.",
