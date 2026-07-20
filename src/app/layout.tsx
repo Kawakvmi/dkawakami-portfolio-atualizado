@@ -1,14 +1,55 @@
 import type { Metadata, Viewport } from "next";
 import { fraunces, inter, jetbrainsMono } from "@/lib/fonts";
+import { siteConfig, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Dereck Kawakami — Digital Designer & Creative Developer",
+    default: siteConfig.title,
     template: "%s — Dereck Kawakami",
   },
-  description:
-    "Dereck Kawakami desenha e constrói interfaces, produtos e sistemas na interseção entre design, front-end, conteúdo e IA aplicada.",
+  description: siteConfig.description,
+  applicationName: siteConfig.name,
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  keywords: [
+    "Dereck Kawakami",
+    "Digital Designer",
+    "Creative Developer",
+    "Product Design",
+    "Front-end",
+    "Next.js",
+    "UX/UI",
+    "Portfolio",
+  ],
+  alternates: {
+    canonical: "/",
+    languages: {
+      "pt-BR": "/",
+      "en-US": "/en",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "pt_BR",
+    alternateLocale: "en_US",
+    url: "/",
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  manifest: "/manifest.webmanifest",
 };
 
 export const viewport: Viewport = {
