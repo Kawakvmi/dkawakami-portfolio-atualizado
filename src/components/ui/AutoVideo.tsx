@@ -21,6 +21,11 @@ export function AutoVideo({
 }) {
   const ref = useRef<HTMLVideoElement>(null);
   const reduce = useReducedMotion();
+  const type = src.endsWith(".mp4")
+    ? "video/mp4"
+    : src.endsWith(".webm")
+      ? "video/webm"
+      : undefined;
 
   useEffect(() => {
     const el = ref.current;
@@ -52,7 +57,7 @@ export function AutoVideo({
       controls={!!reduce}
       aria-label={label}
     >
-      <source src={src} type="video/webm" />
+      <source src={src} type={type} />
     </video>
   );
 }

@@ -10,6 +10,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/ui/Reveal";
 import { Eyebrow } from "@/components/ui/SectionHeader";
 import { ProjectMedia } from "@/components/ui/ProjectMedia";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { coverIcon, IconMonitor } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 
 function base(locale: Locale) {
@@ -170,7 +171,7 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
               locale={locale}
               label={t(project.title)}
               pendingTag={placeholderTag}
-              confidential={project.confidential}
+              icon={coverIcon(project)}
               priority
               sizes="(min-width: 1152px) 1152px, 100vw"
               className="border-border aspect-video rounded-2xl border"
@@ -350,13 +351,15 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
                       locale={locale}
                       label={t(screen.caption)}
                       pendingTag={placeholderTag}
+                      icon={<IconMonitor />}
                       sizes="(min-width: 768px) 50vw, 100vw"
                       className="border-border aspect-[16/10] rounded-xl border"
                     />
-                    <figcaption className="text-muted mt-3 flex items-start gap-2 text-sm">
-                      <span aria-hidden className="text-accent-text">
-                        —
-                      </span>
+                    <figcaption className="text-muted mt-3 flex items-start gap-2.5 text-sm">
+                      <span
+                        aria-hidden
+                        className="bg-accent-text/60 mt-2 h-px w-3 shrink-0"
+                      />
                       {t(screen.caption)}
                     </figcaption>
                   </figure>

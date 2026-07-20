@@ -5,6 +5,7 @@ import { categoryLabel, getDictionary } from "@/lib/i18n/dictionaries";
 import type { Project } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { ProjectMedia } from "@/components/ui/ProjectMedia";
+import { coverIcon } from "@/components/ui/icons";
 
 function MetaLine({ project, locale }: { project: Project; locale: Locale }) {
   const dict = getDictionary(locale);
@@ -79,7 +80,7 @@ export function WorkCard({
             locale={locale}
             label={project.title[locale]}
             pendingTag={placeholderTag}
-            confidential={project.confidential}
+            icon={coverIcon(project)}
             priority={priority}
             sizes={
               featured

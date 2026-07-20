@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import type { Locale } from "@/lib/i18n/config";
 import type { MediaAsset } from "@/lib/types";
@@ -15,7 +16,7 @@ export function ProjectMedia({
   locale,
   label,
   pendingTag,
-  confidential = false,
+  icon,
   className,
   sizes = "(min-width: 768px) 100vw, 100vw",
   priority = false,
@@ -24,7 +25,7 @@ export function ProjectMedia({
   locale: Locale;
   label: string;
   pendingTag: string;
-  confidential?: boolean;
+  icon?: ReactNode;
   className?: string;
   sizes?: string;
   priority?: boolean;
@@ -37,7 +38,7 @@ export function ProjectMedia({
         <MediaPlaceholder
           label={label}
           tag={pendingTag}
-          confidential={confidential}
+          icon={icon}
           className="absolute inset-0"
         />
       ) : media.type === "video" ? (

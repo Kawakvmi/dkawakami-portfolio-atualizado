@@ -1,17 +1,45 @@
+import Image from "next/image";
 import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { profile } from "@/data/profile";
 import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
+import { MediaPlaceholder } from "@/components/ui/MediaPlaceholder";
+import { IconUser } from "@/components/ui/icons";
 
 export function About({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
 
   return (
-    <Section id="about" glow={{ x: "80%", y: "30%" }}>
-      <div className="grid gap-10 md:grid-cols-12 md:gap-8">
-        <div className="md:col-span-5">
+    <Section id="about" glow={{ x: "82%", y: "28%" }}>
+      <div className="grid gap-10 md:grid-cols-12 md:gap-10">
+        {/* Portrait */}
+        <div className="md:col-span-5 lg:col-span-4">
+          <Reveal y={20}>
+            <div className="border-border bg-surface relative aspect-4/5 overflow-hidden rounded-2xl border">
+              {profile.photo.src ? (
+                <Image
+                  src={profile.photo.src}
+                  alt={profile.photo.alt[locale]}
+                  fill
+                  sizes="(min-width: 768px) 40vw, 100vw"
+                  className="object-cover"
+                />
+              ) : (
+                <MediaPlaceholder
+                  label={profile.name}
+                  tag={locale === "pt" ? "Retrato" : "Portrait"}
+                  icon={<IconUser />}
+                  className="absolute inset-0"
+                />
+              )}
+            </div>
+          </Reveal>
+        </div>
+
+        {/* Text */}
+        <div className="md:col-span-7 md:col-start-6">
           <Reveal>
             <Eyebrow>{dict.about.eyebrow}</Eyebrow>
           </Reveal>
@@ -20,7 +48,18 @@ export function About({ locale }: { locale: Locale }) {
               {dict.about.heading}
             </h2>
           </Reveal>
-          <Reveal delay={0.1}>
+
+          <div className="mt-6 flex flex-col gap-5">
+            {profile.about[locale].map((paragraph, i) => (
+              <Reveal key={i} delay={0.1 + i * 0.06}>
+                <p className="text-muted-strong text-lg leading-relaxed text-pretty">
+                  {paragraph}
+                </p>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={0.3}>
             <dl className="border-border mt-8 flex flex-col gap-3 border-t pt-6 font-mono text-xs">
               <div className="flex items-center justify-between gap-4">
                 <dt className="text-muted">{profile.name}</dt>
@@ -36,16 +75,6 @@ export function About({ locale }: { locale: Locale }) {
               </div>
             </dl>
           </Reveal>
-        </div>
-
-        <div className="flex flex-col gap-6 md:col-span-6 md:col-start-7">
-          {profile.about[locale].map((paragraph, i) => (
-            <Reveal key={i} delay={i * 0.08}>
-              <p className="text-muted-strong text-lg leading-relaxed text-pretty">
-                {paragraph}
-              </p>
-            </Reveal>
-          ))}
         </div>
       </div>
     </Section>

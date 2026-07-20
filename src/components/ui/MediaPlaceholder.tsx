@@ -1,20 +1,21 @@
+import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 /**
  * Intentional, on-brand stand-in for media that isn't available yet (real
  * screenshots/video are added under /public and wired via the project's
- * `cover.src`). Never fabricates a fake screenshot — it clearly reads as a
- * production placeholder while keeping the layout composed.
+ * `cover.src`). Never fabricates a fake screenshot: it shows a fitting icon and
+ * a production label while keeping the layout composed.
  */
 export function MediaPlaceholder({
   label,
   tag,
-  confidential = false,
+  icon,
   className,
 }: {
   label: string;
   tag: string;
-  confidential?: boolean;
+  icon?: ReactNode;
   className?: string;
 }) {
   return (
@@ -43,28 +44,16 @@ export function MediaPlaceholder({
           backgroundSize: "26px 26px",
         }}
       />
-      <div className="relative z-10 flex flex-col items-center gap-3 px-6 text-center">
-        {confidential && (
+      <div className="relative z-10 flex flex-col items-center gap-4 px-6 text-center">
+        {icon && (
           <span
             aria-hidden
-            className="border-border-strong text-muted flex h-11 w-11 items-center justify-center rounded-full border"
+            className="border-border-strong text-accent-text bg-background/40 flex h-14 w-14 items-center justify-center rounded-2xl border backdrop-blur-sm"
           >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.6"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="3" y="11" width="18" height="10" rx="2" />
-              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
+            {icon}
           </span>
         )}
-        <span className="text-muted-strong font-display max-w-[16ch] text-2xl leading-tight">
+        <span className="text-muted-strong font-display max-w-[18ch] text-xl leading-tight">
           {label}
         </span>
         <span className="text-muted font-mono text-[10px] tracking-[0.22em] uppercase">

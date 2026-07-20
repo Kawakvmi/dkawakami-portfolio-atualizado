@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { fraunces, inter, jetbrainsMono } from "@/lib/fonts";
+import { fraunces, inter, jetbrainsMono, petitScript } from "@/lib/fonts";
 import { siteConfig, siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+      className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} ${petitScript.variable}`}
     >
       <body className="min-h-dvh antialiased">{children}</body>
     </html>

@@ -32,14 +32,15 @@ export function Hero({ locale }: { locale: Locale }) {
             </span>
             <span className="font-mono text-sm tracking-[0.18em] uppercase">
               {profile.name}
-              <span className="text-muted"> — {profile.title[locale]}</span>
+              <span className="text-muted"> · {profile.title[locale]}</span>
             </span>
           </div>
         </Reveal>
 
         <HeroHeadline
           text={profile.headline[locale]}
-          className="font-display mt-8 max-w-[16ch] text-[clamp(2.75rem,8.5vw,6.75rem)] leading-[0.98] tracking-[-0.02em]"
+          scriptWord={profile.scriptWord[locale]}
+          className="font-display mt-8 max-w-[18ch] text-[clamp(2.75rem,8.5vw,6.75rem)] leading-[1.02] tracking-[-0.02em]"
         />
 
         <Reveal delay={0.5} y={16}>
