@@ -9,7 +9,7 @@ export function Footer({ locale }: { locale: Locale }) {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-border relative border-t">
+    <footer className="border-border relative z-10 border-t">
       <div className="container-editorial py-14">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">

@@ -69,7 +69,7 @@ export function WorkCard({
   return (
     <Link
       href={href}
-      className="group border-border bg-surface/40 hover:border-border-strong block overflow-hidden rounded-2xl border transition-colors duration-300"
+      className="group card-mirror card-beam border-border/50 hover:border-border-strong block overflow-hidden rounded-2xl border transition-all duration-300 hover:-translate-y-0.5"
     >
       <div
         className={cn(featured && "md:grid md:grid-cols-2 md:items-stretch")}

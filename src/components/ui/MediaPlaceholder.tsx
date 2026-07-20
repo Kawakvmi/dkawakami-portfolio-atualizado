@@ -21,7 +21,7 @@ export function MediaPlaceholder({
   return (
     <div
       className={cn(
-        "bg-surface relative flex items-center justify-center overflow-hidden",
+        "bg-surface flex items-center justify-center overflow-hidden",
         className,
       )}
     >

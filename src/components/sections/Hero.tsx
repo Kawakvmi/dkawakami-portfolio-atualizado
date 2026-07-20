@@ -14,6 +14,7 @@ export function Hero({ locale }: { locale: Locale }) {
       id="top"
       className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden pt-32 pb-24"
     >
+      <div aria-hidden className="hero-grain" />
       <div
         aria-hidden
         className="section-glow"
