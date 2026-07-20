@@ -12,7 +12,7 @@ export function Contact({ locale }: { locale: Locale }) {
   const externalSocials = socials.filter((s) => s.label !== "Email");
 
   return (
-    <Section id="contact" glow={{ x: "50%", y: "0%" }}>
+    <Section id="contact">
       <div className="max-w-3xl">
         <Reveal>
           <Eyebrow>{dict.contact.eyebrow}</Eyebrow>

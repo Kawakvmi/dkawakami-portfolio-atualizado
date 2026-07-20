@@ -26,6 +26,7 @@ export function SiteShell({
   return (
     <>
       <HtmlLang lang={locale === "en" ? "en" : "pt-BR"} />
+      <div aria-hidden className="site-bg" />
       <CursorGlow />
       <a
         href="#main"

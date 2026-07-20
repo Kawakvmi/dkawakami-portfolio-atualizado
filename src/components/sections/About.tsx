@@ -12,7 +12,7 @@ export function About({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
 
   return (
-    <Section id="about" glow={{ x: "82%", y: "28%" }}>
+    <Section id="about">
       <div className="grid gap-10 md:grid-cols-12 md:gap-10">
         {/* Portrait */}
         <div className="md:col-span-5 lg:col-span-4">

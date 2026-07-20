@@ -9,7 +9,7 @@ export function Expertise({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
 
   return (
-    <Section id="expertise" glow={{ x: "12%", y: "20%" }}>
+    <Section id="expertise">
       <SectionHeader
         eyebrow={dict.expertise.eyebrow}
         heading={dict.expertise.heading}

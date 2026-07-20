@@ -12,7 +12,7 @@ export function SelectedWork({ locale }: { locale: Locale }) {
   const rest = projects.filter((p) => !p.featured);
 
   return (
-    <Section id="work" glow={{ x: "85%", y: "10%" }}>
+    <Section id="work">
       <SectionHeader eyebrow={dict.work.eyebrow} heading={dict.work.heading} />
 
       <div className="mt-14 flex flex-col gap-6">

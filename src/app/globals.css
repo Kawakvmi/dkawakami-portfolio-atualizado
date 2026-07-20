@@ -478,6 +478,28 @@ body::after {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Site background — one continuous, seamless ambient layer (fixed),  */
+/*  so scrolling never reveals a per-section edge.                     */
+/* ------------------------------------------------------------------ */
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      55% 40% at 85% 6%,
+      color-mix(in oklab, var(--accent) 8%, transparent),
+      transparent 62%
+    ),
+    radial-gradient(
+      45% 38% at 8% 52%,
+      color-mix(in oklab, var(--accent) 5%, transparent),
+      transparent 60%
+    );
+}
+
+/* ------------------------------------------------------------------ */
 /*  Cursor light — very faint purple glow that follows the pointer,   */
 /*  sitting behind all page content.                                  */
 /* ------------------------------------------------------------------ */
@@ -520,7 +542,7 @@ body::after {
 .paper-patch {
   position: absolute;
   inset: -0.06em -0.28em -0.12em -0.24em;
-  z-index: 0;
+  z-index: -1;
   transform: rotate(-2.4deg);
   border-radius: 3px;
   background-color: #ece3d0;

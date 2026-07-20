@@ -25,13 +25,18 @@ export function HeroHeadline({
   const ease = [0.22, 1, 0.36, 1] as const;
 
   return (
-    <h1 className={className} aria-label={text}>
+    <h1
+      className={["relative isolate", className].filter(Boolean).join(" ")}
+      aria-label={text}
+    >
       {words.map((word, i) => {
         const isScript = scriptWord && strip(word) === scriptWord;
         const isLast = i === words.length - 1;
         const gap = { marginRight: isLast ? 0 : "0.26em" } as CSSProperties;
 
-        // Script word: paper-collage backing, no clip so the paper can bleed.
+        // Script word: paper-collage backing. The paper lives in the (untransformed)
+        // wrapper at z-index -1, so it sits above the background but behind every
+        // title letter; only the animated ink is lifted above it.
         if (isScript) {
           return (
             <span
@@ -40,8 +45,9 @@ export function HeroHeadline({
               className="relative inline-block align-bottom"
               style={gap}
             >
+              <span aria-hidden className="paper-patch" />
               <motion.span
-                className="relative inline-block px-[0.18em] pb-[0.06em]"
+                className="paper-ink font-script relative z-10 inline-block px-[0.18em] pb-[0.06em] italic"
                 initial={{ opacity: reduce ? 1 : 0, y: reduce ? 0 : 22 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
@@ -50,10 +56,7 @@ export function HeroHeadline({
                   ease,
                 }}
               >
-                <span aria-hidden className="paper-patch" />
-                <span className="paper-ink font-script relative z-1 italic">
-                  {word}
-                </span>
+                {word}
               </motion.span>
             </span>
           );

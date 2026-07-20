@@ -15,7 +15,7 @@ export const projects: Project[] = [
       pt: "SaaS de gestão de produção de conteúdo",
       en: "Content production management SaaS",
     },
-    year: { pt: "2025", en: "2025" },
+    year: { pt: "2026", en: "2026" },
     category: ["Product & Interfaces"],
     role: {
       pt: ["Design de produto", "Front-end", "Estratégia de UX"],
@@ -193,7 +193,7 @@ export const projects: Project[] = [
       pt: "Bots de scraping e pipelines de mídia com IA",
       en: "Scraping bots and AI-assisted media pipelines",
     },
-    year: { pt: "2025", en: "2025" },
+    year: { pt: "2026", en: "2026" },
     category: ["Automation & AI"],
     role: {
       pt: ["Automação", "Engenharia de pipeline", "Produção com IA"],
