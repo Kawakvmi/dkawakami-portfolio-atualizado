@@ -154,7 +154,7 @@ export function Header({
         {menuOpen && (
           <motion.nav
             key="mobile-menu"
-            aria-label="Primary"
+            aria-label="Mobile"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
