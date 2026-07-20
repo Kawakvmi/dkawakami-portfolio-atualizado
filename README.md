@@ -204,9 +204,10 @@ Vercel Analytics + Speed Insights não estão incluídos. Se quiser, instale
 
 Itens a substituir quando os arquivos estiverem prontos (hoje em placeholder identificado):
 
-- [ ] **Foto do perfil** em `public/media/dereck.jpg` + `photo.src` em `profile.ts`.
-- [ ] **Vídeo do CreatorFlow** em `public/media/` (`.mp4` ou `.webm`) + `cover.src`/`poster` em `projects.ts`.
-- [ ] **Screenshots do CreatorFlow** (4 telas: Kanban, Card/Guidebook, Calendário, Dashboard) em `screens`.
+- [x] **Foto do perfil** (`public/media/dereck.png`, ligada no About).
+- [x] **Vídeo do CreatorFlow** (`public/media/creatorflow.mp4`, hero do card e do case).
+- [x] **CV** especializado em `/cv` + PDF em `public/dereck-kawakami-cv.pdf`.
+- [ ] **Screenshots do CreatorFlow** (4 telas: Kanban, Card/Guidebook, Calendário, Dashboard) em `screens` (hoje com ícone placeholder).
 - [ ] **Visuais adaptados** do case corporativo (confidencial, sem nome/logo/dados do cliente).
 - [ ] Confirmar o **ano** exibido em cada case (`year` em `projects.ts`).
-- [x] **CV** especializado em `/cv` + PDF em `public/dereck-kawakami-cv.pdf`.
+- [ ] Opcional: **poster** do vídeo (`.jpg`) para primeiro frame instantâneo; e comprimir o `.mp4` (hoje ~11 MB).

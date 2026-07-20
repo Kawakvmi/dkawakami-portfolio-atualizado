@@ -35,11 +35,11 @@ export const projects: Project[] = [
     ],
     cover: {
       type: "video",
-      src: "",
+      src: "/media/creatorflow.mp4",
       poster: "",
       alt: {
-        pt: "Interface do CreatorFlow, quadro Kanban editorial em tema escuro",
-        en: "CreatorFlow interface, editorial Kanban board in dark theme",
+        pt: "Vídeo demonstrativo do CreatorFlow, quadro Kanban editorial em tema escuro",
+        en: "CreatorFlow demo video, editorial Kanban board in dark theme",
       },
       width: 1600,
       height: 1000,

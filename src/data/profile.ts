@@ -37,7 +37,7 @@ export const profile = {
    * tasteful monogram frame, never a broken image.
    */
   photo: {
-    src: "",
+    src: "/media/dereck.png",
     alt: {
       pt: "Retrato de Dereck Kawakami",
       en: "Portrait of Dereck Kawakami",
