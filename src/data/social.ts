@@ -2,9 +2,8 @@ import type { SocialLink } from "@/lib/types";
 
 export const contact = {
   email: "dereckkawakami@gmail.com",
-  /** Set to a path under /public (e.g. "/dereck-kawakami-cv.pdf") to show the
-   *  "Download CV" button. Kept null until the file is provided — no dead link. */
-  cv: null as string | null,
+  /** Downloadable CV (PDF generated from the /cv page, saved under /public). */
+  cv: "/dereck-kawakami-cv.pdf" as string | null,
 };
 
 export const socials: SocialLink[] = [
