@@ -36,7 +36,7 @@ export const projects: Project[] = [
     cover: {
       type: "video",
       src: "/media/creatorflow.mp4",
-      poster: "",
+      poster: "/media/creatorflow-poster.jpg",
       alt: {
         pt: "Vídeo demonstrativo do CreatorFlow, quadro Kanban editorial em tema escuro",
         en: "CreatorFlow demo video, editorial Kanban board in dark theme",

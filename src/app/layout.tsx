@@ -63,6 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
+      suppressHydrationWarning
       className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable} ${petitScript.variable}`}
     >
       <body className="min-h-dvh antialiased">{children}</body>
