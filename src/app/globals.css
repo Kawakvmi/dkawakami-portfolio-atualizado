@@ -544,6 +544,7 @@ body::after {
   inset: -0.06em -0.28em -0.12em -0.24em;
   z-index: -1;
   transform: rotate(-2.4deg);
+  animation: paper-paste 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
   border-radius: 3px;
   background-color: #ece3d0;
   background-image:
@@ -678,6 +679,78 @@ body::after {
       #c9bcff 352deg,
       transparent 360deg
     );
+  }
+}
+
+/* Paper "paste" entrance — pressed onto the layout, then settled */
+@keyframes paper-paste {
+  0% {
+    opacity: 0;
+    transform: rotate(-9deg) scale(1.16) translateY(-10px);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(-1deg) scale(0.985) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-2.4deg) scale(1) translateY(0);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Neon accent word (contact heading)                                */
+/* ------------------------------------------------------------------ */
+.neon-word {
+  color: #cdc2ff;
+  padding-inline: 0.05em;
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.55),
+    0 0 14px var(--accent),
+    0 0 30px var(--accent),
+    0 0 54px color-mix(in oklab, var(--accent) 70%, transparent);
+  animation: neon-flicker 5s ease-in-out infinite;
+}
+@keyframes neon-flicker {
+  0%,
+  46%,
+  54%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.28);
+  }
+  51% {
+    filter: brightness(0.92);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Process numbers — sequential neon pulse (01 → 02 → 03 → 04, loop) */
+/* ------------------------------------------------------------------ */
+.process-num {
+  animation: process-glow 6s linear infinite;
+}
+@keyframes process-glow {
+  0% {
+    color: var(--border-strong);
+    text-shadow: none;
+  }
+  6% {
+    color: #cdc2ff;
+    text-shadow:
+      0 0 10px var(--accent),
+      0 0 26px var(--accent),
+      0 0 46px color-mix(in oklab, var(--accent) 60%, transparent);
+  }
+  17% {
+    color: var(--border-strong);
+    text-shadow: none;
+  }
+  100% {
+    color: var(--border-strong);
+    text-shadow: none;
   }
 }
 

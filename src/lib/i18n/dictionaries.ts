@@ -44,7 +44,9 @@ const pt = {
 
   contact: {
     eyebrow: "Contato",
-    heading: "Vamos conversar",
+    headingPre: "Vamos ",
+    headingNeon: "criar",
+    headingPost: " juntos?",
     blurb:
       "Aberto a vagas CLT, contrato e projetos freelance. Para propostas, parcerias ou só uma conversa:",
     sendEmail: "Enviar e-mail",
@@ -54,6 +56,8 @@ const pt = {
   },
 
   footer: {
+    tagline: "Criando na interseção entre design, código e conteúdo.",
+    toolsLabel: "Ferramentas do dia a dia",
     rights: "Todos os direitos reservados.",
     builtWith: "Desenhado e construído com Next.js e Motion.",
     backToTop: "Voltar ao topo",
@@ -135,7 +139,9 @@ const en: Dictionary = {
 
   contact: {
     eyebrow: "Contact",
-    heading: "Let's talk",
+    headingPre: "Let's ",
+    headingNeon: "create",
+    headingPost: " together?",
     blurb:
       "Open to full-time, contract and freelance work. For proposals, partnerships or just a chat:",
     sendEmail: "Send email",
@@ -145,6 +151,8 @@ const en: Dictionary = {
   },
 
   footer: {
+    tagline: "Creating at the intersection of design, code and content.",
+    toolsLabel: "Everyday tools",
     rights: "All rights reserved.",
     builtWith: "Designed and built with Next.js and Motion.",
     backToTop: "Back to top",

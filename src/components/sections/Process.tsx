@@ -17,9 +17,12 @@ export function Process({ locale }: { locale: Locale }) {
       />
 
       <Stagger className="mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-4">
-        {process.map((step) => (
+        {process.map((step, i) => (
           <StaggerItem key={step.index} className="border-border border-t pt-6">
-            <span className="text-border-strong font-display text-5xl leading-none">
+            <span
+              className="process-num text-border-strong font-display text-5xl leading-none"
+              style={{ animationDelay: `${i * 1.5}s` }}
+            >
               {step.index}
             </span>
             <h3 className="mt-5 text-xl">{step.title[locale]}</h3>

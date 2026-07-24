@@ -19,7 +19,11 @@ export function Contact({ locale }: { locale: Locale }) {
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mt-6 text-[clamp(2.5rem,7vw,4.5rem)] leading-[1.02]">
-            {dict.contact.heading}
+            {dict.contact.headingPre}
+            <span className="neon-word font-script italic">
+              {dict.contact.headingNeon}
+            </span>
+            {dict.contact.headingPost}
           </h2>
         </Reveal>
         <Reveal delay={0.1}>

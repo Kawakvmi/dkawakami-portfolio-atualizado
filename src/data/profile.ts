@@ -46,14 +46,27 @@ export const profile = {
   /** About section, hybrid profile, no emotional cliché. */
   about: {
     pt: [
-      "Dereck Kawakami transita entre o design e o código. Projeta interfaces e sistemas de produto, escreve front-end em React e Next.js, e desenha pipelines de conteúdo e automação apoiados por IA.",
+      "Há mais de quatro anos trabalhando com criação de conteúdo e design, Dereck Kawakami transita entre o design e o código: projeta interfaces e sistemas de produto, escreve front-end em React e Next.js, e desenha pipelines de conteúdo e automação apoiados por IA.",
       "Essa amplitude é o ponto. Em vez de passar o trabalho de mão em mão entre design, desenvolvimento e conteúdo, ele mantém a intenção intacta do primeiro rascunho até a interface no ar, e até o texto e o vídeo que a acompanham.",
       "O interesse constante é reduzir o atrito entre ideia e execução: ferramentas internas que economizam horas, sistemas visuais que escalam, automações que assumem o repetitivo para sobrar tempo ao que exige julgamento.",
     ],
     en: [
-      "Dereck Kawakami moves between design and code. He designs product interfaces and systems, ships front-end in React and Next.js, and builds AI-assisted content and automation pipelines.",
+      "Working with content creation and design for over four years, Dereck Kawakami moves between design and code: he designs product interfaces and systems, ships front-end in React and Next.js, and builds AI-assisted content and automation pipelines.",
       "That range is the point. Instead of handing work off between design, development and content, he keeps the intent intact from the first sketch to the shipped interface, and to the copy and video that travel with it.",
       "The through-line is reducing the friction between idea and execution: internal tools that save hours, visual systems that scale, automations that take over the repetitive so judgement gets the time it needs.",
     ],
   } satisfies Localized<string[]>,
+  /** Everyday tools, shown in the footer. Order by relevance. */
+  tools: [
+    "Figma",
+    "Photoshop",
+    "Illustrator",
+    "After Effects",
+    "Premiere",
+    "React.js",
+    "Next.js",
+    "Python",
+    "FFmpeg",
+    "Claude Code",
+  ],
 } as const;
