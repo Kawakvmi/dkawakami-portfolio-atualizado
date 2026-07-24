@@ -40,6 +40,7 @@ const pt = {
   about: {
     eyebrow: "Sobre",
     heading: "Entre o design e o código",
+    skills: "Ferramentas & Skills",
   },
 
   contact: {
@@ -135,6 +136,7 @@ const en: Dictionary = {
   about: {
     eyebrow: "About",
     heading: "Between design and code",
+    skills: "Tools & Skills",
   },
 
   contact: {

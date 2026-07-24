@@ -61,17 +61,23 @@ export const profile = {
       "The through-line is reducing the friction between idea and execution: internal tools that save hours, visual systems that scale, automations that take over the repetitive so judgement gets the time it needs.",
     ],
   } satisfies Localized<string[]>,
-  /** Everyday tools, shown in the footer. Order by relevance. */
-  tools: [
-    "Figma",
-    "Photoshop",
-    "Illustrator",
-    "After Effects",
-    "Premiere",
-    "React.js",
-    "Next.js",
-    "Python",
-    "FFmpeg",
-    "Claude Code",
+  /** Tools grouped by discipline, shown as a skills showcase in About. */
+  toolGroups: [
+    {
+      label: { pt: "Design & Marca", en: "Design & Brand" },
+      tools: ["Figma", "Photoshop", "Illustrator", "PowerPoint", "Excel"],
+    },
+    {
+      label: { pt: "Vídeo & Motion", en: "Video & Motion" },
+      tools: ["Premiere", "After Effects"],
+    },
+    {
+      label: { pt: "Front-end", en: "Front-end" },
+      tools: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "VS Code"],
+    },
+    {
+      label: { pt: "IA & Automação", en: "AI & Automation" },
+      tools: ["Claude Code", "ChatGPT", "Python", "FFmpeg"],
+    },
   ],
 } as const;

@@ -7,6 +7,7 @@ import { Eyebrow } from "@/components/ui/SectionHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { MediaPlaceholder } from "@/components/ui/MediaPlaceholder";
 import { IconUser } from "@/components/ui/icons";
+import { ToolLogo } from "@/components/ui/ToolLogo";
 
 export function About({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -90,6 +91,33 @@ export function About({ locale }: { locale: Locale }) {
           </Reveal>
         </div>
       </div>
+
+      {/* Skills & tools showcase */}
+      <Reveal delay={0.1}>
+        <div className="border-border mt-16 border-t pt-10 md:mt-20">
+          <Eyebrow>{dict.about.skills}</Eyebrow>
+          <div className="mt-8 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+            {profile.toolGroups.map((group) => (
+              <div key={group.label.en}>
+                <p className="text-accent-text font-mono text-[11px] tracking-[0.18em] uppercase">
+                  {group.label[locale]}
+                </p>
+                <ul className="mt-5 flex flex-col gap-3.5">
+                  {group.tools.map((tool) => (
+                    <li
+                      key={tool}
+                      className="text-muted-strong flex items-center gap-3 text-sm"
+                    >
+                      <ToolLogo name={tool} size={26} />
+                      {tool}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
     </Section>
   );
 }

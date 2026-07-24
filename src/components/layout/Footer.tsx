@@ -3,7 +3,6 @@ import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { profile } from "@/data/profile";
 import { socials } from "@/data/social";
-import { ToolLogo } from "@/components/ui/ToolLogo";
 import { BackToTop } from "./BackToTop";
 
 function SocialIcon({ label }: { label: string }) {
@@ -80,27 +79,6 @@ function SocialPill({
   );
 }
 
-function ToolList({ label, tools }: { label: string; tools: ReadonlyArray<string> }) {
-  return (
-    <div className="border-border/60 mt-12 border-t pt-6">
-      <p className="text-muted mb-3 font-mono text-[11px] tracking-[0.2em] uppercase">
-        {label}
-      </p>
-      <ul className="flex flex-wrap gap-x-5 gap-y-3">
-        {tools.map((tool) => (
-          <li
-            key={tool}
-            className="text-muted-strong flex items-center gap-2 text-sm"
-          >
-            <ToolLogo name={tool} />
-            {tool}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 export function Footer({ locale }: { locale: Locale }): ReactNode {
   const dict = getDictionary(locale);
   const year = new Date().getFullYear();
@@ -130,8 +108,6 @@ export function Footer({ locale }: { locale: Locale }): ReactNode {
             ))}
           </nav>
         </div>
-
-        <ToolList label={dict.footer.toolsLabel} tools={profile.tools} />
 
         <div className="border-border/60 text-muted mt-12 flex flex-col gap-4 border-t pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>
