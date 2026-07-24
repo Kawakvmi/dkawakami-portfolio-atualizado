@@ -61,6 +61,8 @@ export type Project = {
     caption: Localized;
     media: MediaAsset;
   }[];
+  /** Design gallery — real pieces shown with hover spotlight, minimal text. */
+  gallery?: MediaAsset[];
 };
 
 export type ExpertisePillar = {

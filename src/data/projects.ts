@@ -336,6 +336,42 @@ export const projects: Project[] = [
       pt: "Comunicação com aparência consistente e profissional entre canais. Nome do cliente, dados e resultados específicos são confidenciais.",
       en: "Communication with a consistent, professional look across channels. Client name, data and specific results are confidential.",
     },
+    /**
+     * Design pieces. Add the files under public/media and fill each `src`
+     * (e.g. "/media/corp-emanapay-1.jpg"). Empty src shows a placeholder.
+     */
+    gallery: [
+      {
+        type: "image",
+        src: "",
+        alt: {
+          pt: "Painel de parede de campanha, marca de meios de pagamento",
+          en: "Campaign wall graphic for a payments brand",
+        },
+        width: 1600,
+        height: 900,
+      },
+      {
+        type: "image",
+        src: "",
+        alt: {
+          pt: "Capa de apresentação de comitê de resultados",
+          en: "Results committee presentation cover",
+        },
+        width: 1600,
+        height: 900,
+      },
+      {
+        type: "image",
+        src: "",
+        alt: {
+          pt: "Painel de parede de campanha com consultora",
+          en: "Campaign wall graphic featuring a consultant",
+        },
+        width: 1600,
+        height: 900,
+      },
+    ],
   },
 ];
 

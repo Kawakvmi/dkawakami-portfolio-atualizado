@@ -23,9 +23,14 @@ export function SelectedWork({ locale }: { locale: Locale }) {
         ))}
 
         {rest.length > 0 && (
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
             {rest.map((project, i) => (
-              <Reveal key={project.slug} y={24} delay={i * 0.05}>
+              <Reveal
+                key={project.slug}
+                y={24}
+                delay={i * 0.05}
+                className="h-full"
+              >
                 <WorkCard project={project} locale={locale} />
               </Reveal>
             ))}

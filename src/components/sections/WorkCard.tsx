@@ -69,10 +69,14 @@ export function WorkCard({
   return (
     <Link
       href={href}
-      className="group card-mirror card-beam border-border/50 hover:border-border-strong block overflow-hidden rounded-2xl border transition-all duration-300 hover:-translate-y-0.5"
+      className="group card-mirror card-beam border-border/50 hover:border-border-strong block h-full overflow-hidden rounded-2xl border transition-all duration-300 hover:-translate-y-0.5"
     >
       <div
-        className={cn(featured && "md:grid md:grid-cols-2 md:items-stretch")}
+        className={cn(
+          featured
+            ? "md:grid md:grid-cols-2 md:items-stretch"
+            : "flex h-full flex-col",
+        )}
       >
         <div className="relative overflow-hidden">
           <ProjectMedia
@@ -104,7 +108,7 @@ export function WorkCard({
         <div
           className={cn(
             "flex flex-col justify-between",
-            featured ? "p-7 md:p-10" : "p-6",
+            featured ? "p-7 md:p-10" : "flex-1 p-6",
           )}
         >
           <div>

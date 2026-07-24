@@ -755,6 +755,30 @@ body::after {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Design gallery — hover spotlight (hovered piece pops, others dim)  */
+/* ------------------------------------------------------------------ */
+.design-gallery-item {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(0.92) saturate(0.96);
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.4s ease,
+    box-shadow 0.4s ease;
+}
+.design-gallery:hover .design-gallery-item {
+  filter: brightness(0.5) saturate(0.85);
+}
+.design-gallery .design-gallery-item:hover {
+  filter: brightness(1.05) saturate(1.08);
+  transform: scale(1.015);
+  z-index: 2;
+  box-shadow:
+    0 26px 60px -24px rgba(0, 0, 0, 0.75),
+    0 0 0 1px color-mix(in oklab, var(--accent) 42%, transparent);
+}
+
+/* ------------------------------------------------------------------ */
 /*  Reduced motion — honor user preference globally                   */
 /* ------------------------------------------------------------------ */
 @media (prefers-reduced-motion: reduce) {

@@ -164,7 +164,7 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
           </Reveal>
         </header>
 
-        {/* Hero cover */}
+        {/* Hero cover — full for real media, a compact band for placeholders */}
         <div className="container-editorial mt-12">
           <Reveal y={24}>
             <ProjectMedia
@@ -175,7 +175,12 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
               icon={coverIcon(project)}
               priority
               sizes="(min-width: 1152px) 1152px, 100vw"
-              className="border-border aspect-video rounded-2xl border"
+              className={cn(
+                "border-border rounded-2xl border",
+                project.cover.src
+                  ? "aspect-video"
+                  : "aspect-[16/7] sm:aspect-[16/5] md:aspect-[24/6]",
+              )}
             />
           </Reveal>
         </div>
@@ -367,6 +372,42 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
                 </Reveal>
               ))}
             </div>
+          </div>
+        )}
+
+        {/* Design gallery — hover spotlight, minimal text */}
+        {project.gallery && project.gallery.length > 0 && (
+          <div className="container-editorial mt-24">
+            <Reveal>
+              <h2 className="text-3xl md:text-4xl">{dict.caseStudy.gallery}</h2>
+            </Reveal>
+            <Reveal y={20}>
+              <div className="design-gallery mt-8 grid gap-4 sm:grid-cols-2">
+                {project.gallery.map((media, i) => (
+                  <div
+                    key={i}
+                    className={cn(
+                      "design-gallery-item border-border overflow-hidden rounded-xl border",
+                      i === 0 && "sm:col-span-2",
+                    )}
+                  >
+                    <ProjectMedia
+                      media={media}
+                      locale={locale}
+                      label={t(project.title)}
+                      pendingTag={placeholderTag}
+                      icon={<IconMonitor />}
+                      sizes={
+                        i === 0
+                          ? "(min-width: 1152px) 1152px, 100vw"
+                          : "(min-width: 768px) 50vw, 100vw"
+                      }
+                      className={i === 0 ? "aspect-[24/9]" : "aspect-[16/10]"}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Reveal>
           </div>
         )}
 
