@@ -336,40 +336,38 @@ export const projects: Project[] = [
       pt: "Comunicação com aparência consistente e profissional entre canais. Nome do cliente, dados e resultados específicos são confidenciais.",
       en: "Communication with a consistent, professional look across channels. Client name, data and specific results are confidential.",
     },
-    /**
-     * Design pieces. Add the files under public/media and fill each `src`
-     * (e.g. "/media/corp-emanapay-1.jpg"). Empty src shows a placeholder.
-     */
+    /** Design pieces (real work), shown as a study case. Portrait items are
+     *  detected via width/height and laid out taller. */
     gallery: [
       {
         type: "image",
-        src: "",
+        src: "/media/corp-emanapay-1.jpg",
         alt: {
-          pt: "Painel de parede de campanha, marca de meios de pagamento",
-          en: "Campaign wall graphic for a payments brand",
+          pt: "Adesivagem de parede EmanaPay (Natura Avon)",
+          en: "EmanaPay wall graphic (Natura Avon)",
         },
-        width: 1600,
-        height: 900,
+        width: 4032,
+        height: 3024,
       },
       {
         type: "image",
-        src: "",
+        src: "/media/corp-sicoob-banner.png",
         alt: {
-          pt: "Capa de apresentação de comitê de resultados",
-          en: "Results committee presentation cover",
+          pt: "Banner de campanha Sicoob",
+          en: "Sicoob campaign banner",
         },
-        width: 1600,
-        height: 900,
+        width: 2551,
+        height: 3402,
       },
       {
         type: "image",
-        src: "",
+        src: "/media/corp-emanapay-2.jpg",
         alt: {
-          pt: "Painel de parede de campanha com consultora",
-          en: "Campaign wall graphic featuring a consultant",
+          pt: "Adesivagem de parede EmanaPay com consultora",
+          en: "EmanaPay wall graphic with a consultant",
         },
-        width: 1600,
-        height: 900,
+        width: 4032,
+        height: 3024,
       },
     ],
   },

@@ -381,31 +381,40 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
             <Reveal>
               <h2 className="text-3xl md:text-4xl">{dict.caseStudy.gallery}</h2>
             </Reveal>
+            <Reveal delay={0.05}>
+              <p className="text-muted mt-3 font-mono text-xs tracking-wide">
+                {dict.caseStudy.galleryNote}
+              </p>
+            </Reveal>
             <Reveal y={20}>
               <div className="design-gallery mt-8 grid gap-4 sm:grid-cols-2">
-                {project.gallery.map((media, i) => (
-                  <div
-                    key={i}
-                    className={cn(
-                      "design-gallery-item border-border overflow-hidden rounded-xl border",
-                      i === 0 && "sm:col-span-2",
-                    )}
-                  >
-                    <ProjectMedia
-                      media={media}
-                      locale={locale}
-                      label={t(project.title)}
-                      pendingTag={placeholderTag}
-                      icon={<IconMonitor />}
-                      sizes={
-                        i === 0
-                          ? "(min-width: 1152px) 1152px, 100vw"
-                          : "(min-width: 768px) 50vw, 100vw"
-                      }
-                      className={i === 0 ? "aspect-[24/9]" : "aspect-[16/10]"}
-                    />
-                  </div>
-                ))}
+                {project.gallery.map((media, i) => {
+                  const portrait =
+                    (media.height ?? 0) > (media.width ?? 1);
+                  return (
+                    <div
+                      key={i}
+                      className={cn(
+                        "design-gallery-item border-border overflow-hidden rounded-xl border",
+                        portrait && "sm:row-span-2",
+                      )}
+                    >
+                      <ProjectMedia
+                        media={media}
+                        locale={locale}
+                        label={t(project.title)}
+                        pendingTag={placeholderTag}
+                        icon={<IconMonitor />}
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className={
+                          portrait
+                            ? "aspect-[3/4] sm:aspect-auto sm:h-full sm:min-h-[30rem]"
+                            : "aspect-[16/10]"
+                        }
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </Reveal>
           </div>
