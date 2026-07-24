@@ -295,10 +295,13 @@ export const projects: Project[] = [
       en: ["Design & layout", "Video & motion", "Internal communication"],
     },
     technologies: [
-      "Adobe Premiere",
-      "After Effects",
-      "Illustrator",
+      "PowerPoint",
+      "Excel",
       "Photoshop",
+      "Illustrator",
+      "Premiere",
+      "After Effects",
+      "Figma",
     ],
     cover: {
       type: "image",
@@ -314,8 +317,8 @@ export const projects: Project[] = [
     confidential: true,
     hasCaseStudy: true,
     summary: {
-      pt: "Layout, design e vídeo para comunicação corporativa: identidade, campanhas internas e materiais on e offline. Cliente sob confidencialidade; visuais adaptados.",
-      en: "Layout, design and video for corporate communication: identity, internal campaigns and on/offline materials. Client under NDA; visuals adapted.",
+      pt: "Layout, design, apresentações e vídeo para comunicação corporativa: identidade, campanhas internas e materiais on e offline. Cliente sob confidencialidade; visuais adaptados.",
+      en: "Layout, design, presentations and video for corporate communication: identity, internal campaigns and on/offline materials. Client under NDA; visuals adapted.",
     },
     problem: {
       pt: "Comunicar de forma clara e consistente dentro de uma organização, para públicos internos e externos, através de muitos formatos e canais diferentes.",

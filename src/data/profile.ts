@@ -15,6 +15,11 @@ export const profile = {
     pt: "Aberto a vagas CLT, contrato e projetos freelance",
     en: "Open to full-time, contract and freelance work",
   } satisfies Localized,
+  /** Short profile / skills, shown as tags in the About section. */
+  roles: {
+    pt: ["Publicitário", "Especialização em UX/UI", "Front-end Dev"],
+    en: ["Advertising background", "UX/UI specialization", "Front-end Dev"],
+  } satisfies Localized<string[]>,
   /**
    * Hero statement. `scriptWord` is rendered in the display script font for
    * emphasis; it must appear verbatim (accents included) inside `headline`.

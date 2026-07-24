@@ -3,6 +3,7 @@ import type { Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { profile } from "@/data/profile";
 import { socials } from "@/data/social";
+import { ToolLogo } from "@/components/ui/ToolLogo";
 import { BackToTop } from "./BackToTop";
 
 function SocialIcon({ label }: { label: string }) {
@@ -85,13 +86,13 @@ function ToolList({ label, tools }: { label: string; tools: ReadonlyArray<string
       <p className="text-muted mb-3 font-mono text-[11px] tracking-[0.2em] uppercase">
         {label}
       </p>
-      <ul className="flex flex-wrap gap-x-5 gap-y-2.5">
+      <ul className="flex flex-wrap gap-x-5 gap-y-3">
         {tools.map((tool) => (
           <li
             key={tool}
             className="text-muted-strong flex items-center gap-2 text-sm"
           >
-            <span aria-hidden className="bg-accent/60 h-1 w-1 rounded-full" />
+            <ToolLogo name={tool} />
             {tool}
           </li>
         ))}

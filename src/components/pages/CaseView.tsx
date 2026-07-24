@@ -11,6 +11,7 @@ import { Eyebrow } from "@/components/ui/SectionHeader";
 import { ProjectMedia } from "@/components/ui/ProjectMedia";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { coverIcon, IconMonitor } from "@/components/ui/icons";
+import { ToolLogo } from "@/components/ui/ToolLogo";
 import { cn } from "@/lib/utils";
 
 function base(locale: Locale) {
@@ -379,8 +380,9 @@ export function CaseView({ slug, locale }: { slug: string; locale: Locale }) {
               {project.technologies.map((tech) => (
                 <li
                   key={tech}
-                  className="border-border text-muted-strong rounded-full border px-4 py-2 font-mono text-xs"
+                  className="border-border bg-surface/40 text-muted-strong flex items-center gap-2 rounded-full border py-1.5 pr-4 pl-1.5 font-mono text-xs"
                 >
+                  <ToolLogo name={tech} />
                   {tech}
                 </li>
               ))}

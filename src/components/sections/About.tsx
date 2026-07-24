@@ -49,7 +49,20 @@ export function About({ locale }: { locale: Locale }) {
             </h2>
           </Reveal>
 
-          <div className="mt-6 flex flex-col gap-5">
+          <Reveal delay={0.1}>
+            <ul className="mt-5 flex flex-wrap gap-2">
+              {profile.roles[locale].map((role) => (
+                <li
+                  key={role}
+                  className="border-border bg-surface/40 text-muted-strong rounded-full border px-3 py-1 font-mono text-[11px] tracking-wide"
+                >
+                  {role}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <div className="mt-7 flex flex-col gap-5">
             {profile.about[locale].map((paragraph, i) => (
               <Reveal key={i} delay={0.1 + i * 0.06}>
                 <p className="text-muted-strong text-lg leading-relaxed text-pretty">
