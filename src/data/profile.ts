@@ -48,17 +48,15 @@ export const profile = {
       en: "Portrait of Dereck Kawakami",
     } satisfies Localized,
   },
-  /** About section, hybrid profile, no emotional cliché. */
+  /** About section, short and career-focused. */
   about: {
     pt: [
-      "Há mais de quatro anos trabalhando com criação de conteúdo e design, Dereck Kawakami transita entre o design e o código: projeta interfaces e sistemas de produto, escreve front-end em React e Next.js, e desenha pipelines de conteúdo e automação apoiados por IA.",
-      "Essa amplitude é o ponto. Em vez de passar o trabalho de mão em mão entre design, desenvolvimento e conteúdo, ele mantém a intenção intacta do primeiro rascunho até a interface no ar, e até o texto e o vídeo que a acompanham.",
-      "O interesse constante é reduzir o atrito entre ideia e execução: ferramentas internas que economizam horas, sistemas visuais que escalam, automações que assumem o repetitivo para sobrar tempo ao que exige julgamento.",
+      "Publicitário com especialização em UX/UI e front-end, há mais de quatro anos criando conteúdo e design. Como analista conteudista, desenvolve campanhas, vídeos e comunicação para marcas, unindo estratégia, design e tecnologia.",
+      "Transita entre o design e o código: projeta interfaces, escreve front-end em React e Next.js e monta pipelines de conteúdo com IA. Sempre com o mesmo foco, reduzir o atrito entre a ideia e a execução.",
     ],
     en: [
-      "Working with content creation and design for over four years, Dereck Kawakami moves between design and code: he designs product interfaces and systems, ships front-end in React and Next.js, and builds AI-assisted content and automation pipelines.",
-      "That range is the point. Instead of handing work off between design, development and content, he keeps the intent intact from the first sketch to the shipped interface, and to the copy and video that travel with it.",
-      "The through-line is reducing the friction between idea and execution: internal tools that save hours, visual systems that scale, automations that take over the repetitive so judgement gets the time it needs.",
+      "Advertising graduate specialized in UX/UI and front-end, with over four years creating content and design. As a content analyst, he builds campaigns, video and communication for brands, blending strategy, design and technology.",
+      "He moves between design and code: designing interfaces, shipping front-end in React and Next.js and building AI content pipelines. Always with the same focus, cutting the friction between idea and execution.",
     ],
   } satisfies Localized<string[]>,
   /** Tools grouped by discipline, shown as a skills showcase in About. */

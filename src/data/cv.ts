@@ -1,6 +1,7 @@
 /**
  * CV content, tailored to the "Digital Designer & Creative Developer"
- * positioning. Rendered at /cv and exported to /public as a PDF.
+ * positioning, focused on design/UX. Rendered at /cv and exported to /public
+ * as a PDF.
  *
  * Privacy: full street address and personal data beyond city/phone/email are
  * intentionally omitted, since /cv and the PDF are public. To include the full
@@ -18,7 +19,7 @@ export const cv = {
     github: "github.com/Kawakvmi",
   },
   objective:
-    "Atuar entre design digital, front-end e conteúdo, aplicando tecnologia, automação, IA e UX para potencializar resultados. Uno a experiência como analista conteudista na estruturação de campanhas, treinamentos e comunicação interna à formação em desenvolvimento front-end, entregando projetos funcionais, conectados à experiência do usuário e à performance das equipes.",
+    "Designer digital com base em publicidade e especialização em UX/UI e desenvolvimento front-end. Uno design, conteúdo e tecnologia para criar interfaces, campanhas e peças que unem estética, usabilidade e resultado.",
 
   experience: [
     {
@@ -26,36 +27,9 @@ export const cv = {
       role: "Analista Conteudista",
       period: "fev/2023, atual",
       bullets: [
-        "Desenvolvimento de campanhas motivacionais e comitês de resultados.",
-        "Criação de imagens e vídeos corporativos de endomarketing.",
-        "Estratégias de marketing interno e externo, com foco em inovação e análise de métricas.",
-        "Fortalecimento da cultura organizacional por meio de comunicação e conteúdo.",
-      ],
-    },
-    {
-      company: "Lojas Riachuelo",
-      role: "Assistente Administrativo",
-      period: "mar/2022, fev/2023",
-      bullets: [
-        "Caixa, controle de cofre e de pontos; processos de admissão e rescisão.",
-        "Emissão e baixa de notas fiscais; acompanhamento de entregas via SFTP.",
-        "Acompanhamento de dashboards em BI.",
-      ],
-    },
-    {
-      company: "Brasil Center",
-      role: "Analista de Backoffice",
-      period: "nov/2021, mar/2022",
-      bullets: ["Rotinas de backoffice e apoio operacional."],
-    },
-    {
-      company: "Lojas Pernambucanas",
-      role: "Assessor de Caixa e Gestão E-commerce WhatsApp",
-      period: "set/2019, nov/2021",
-      bullets: [
-        "Atendimento ao cliente e operação de caixa.",
-        "Acompanhamento de vendas por regionais e estratégias para alavancar o e-commerce.",
-        "Cumprimento de metas diárias de cadastros e produtos.",
+        "Design de campanhas, peças gráficas, brindes e vídeos para comunicação interna e externa.",
+        "Direção de arte e layout de materiais on e offline, do digital ao impresso.",
+        "Produção de conteúdo com apoio de IA e análise de métricas de desempenho.",
       ],
     },
   ],
@@ -67,7 +41,7 @@ export const cv = {
       period: "conclusão prevista 01/2026",
       highlight: true,
       detail:
-        "Formação em desenvolvimento de interfaces web: HTML5, CSS3 (Flexbox, Grid, responsivo), JavaScript (ES6+), consumo de APIs REST, Git e GitHub, introdução a React.js, princípios de UX/UI, acessibilidade, performance e Figma.",
+        "HTML5, CSS3 (Flexbox, Grid, responsivo), JavaScript (ES6+), consumo de APIs REST, Git e GitHub, introdução a React.js, princípios de UX/UI, acessibilidade, performance e Figma.",
     },
     {
       course: "Publicidade e Propaganda",
@@ -75,15 +49,22 @@ export const cv = {
       period: "concluído em 2023",
       highlight: false,
     },
-    {
-      course: "Ensino Médio",
-      school: "Colégio Metodista",
-      period: "concluído em 2018",
-      highlight: false,
-    },
   ],
 
   skillGroups: [
+    {
+      label: "UX/UI & Design",
+      items: [
+        "Figma",
+        "Princípios de UX/UI",
+        "Wireframes e protótipos",
+        "Acessibilidade e usabilidade",
+      ],
+    },
+    {
+      label: "Design gráfico & Vídeo",
+      items: ["Photoshop", "Illustrator", "After Effects", "Premiere"],
+    },
     {
       label: "Front-End",
       items: [
@@ -92,12 +73,7 @@ export const cv = {
         "JavaScript (ES6+)",
         "Introdução a React.js",
         "Git e GitHub",
-        "UX/UI, acessibilidade e performance",
       ],
-    },
-    {
-      label: "Design & Vídeo",
-      items: ["Photoshop", "Illustrator", "After Effects", "Premiere", "Figma"],
     },
     {
       label: "IA & Conteúdo",
@@ -107,12 +83,11 @@ export const cv = {
         "MidJourney",
         "Estratégia e planejamento de conteúdo",
         "Copywriting criativo",
-        "Análise de métricas de campanhas",
       ],
     },
   ],
 
-  /** `highlight: true` marks the certifications most relevant to this market. */
+  /** `highlight: true` marks the courses most relevant to this market. */
   certifications: [
     {
       name: "Desenvolvedor Front-End",
@@ -125,9 +100,14 @@ export const cv = {
       highlight: true,
     },
     {
-      name: "Workshop, Conhecimentos em IA",
-      issuer: "Paschoalotto",
+      name: "Storytelling para Criadores de Conteúdo",
+      issuer: "Brainstorm Academy",
       highlight: true,
+    },
+    {
+      name: "Planejamento de Conteúdo para Mídias Sociais",
+      issuer: "Workshop",
+      highlight: false,
     },
     {
       name: "Dominando o Premiere 2.0",
@@ -135,13 +115,8 @@ export const cv = {
       highlight: false,
     },
     {
-      name: "Storytelling para Criadores de Conteúdo",
-      issuer: "Brainstorm Academy",
-      highlight: false,
-    },
-    {
-      name: "Planejamento de Conteúdo para Mídias Sociais",
-      issuer: "Workshop",
+      name: "Conhecimentos em IA",
+      issuer: "Paschoalotto",
       highlight: false,
     },
     {

@@ -14,10 +14,10 @@ export function HomeView({ locale }: { locale: Locale }) {
   return (
     <SiteShell locale={locale} onHome altHref={altHref}>
       <Hero locale={locale} />
+      <About locale={locale} />
       <SelectedWork locale={locale} />
       <Expertise locale={locale} />
       <Process locale={locale} />
-      <About locale={locale} />
       <Contact locale={locale} />
     </SiteShell>
   );

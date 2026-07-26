@@ -9,6 +9,8 @@ export type MediaAsset = {
   alt: Localized;
   width?: number;
   height?: number;
+  /** How the image fills its box. "contain" for transparent product shots. */
+  fit?: "cover" | "contain";
 };
 
 export type ProjectLink = {

@@ -23,7 +23,7 @@ export function SelectedWork({ locale }: { locale: Locale }) {
         ))}
 
         {rest.length > 0 && (
-          <div className="grid gap-6 md:grid-cols-2 md:items-stretch">
+          <div className="grid gap-6 sm:grid-cols-2 sm:items-stretch lg:grid-cols-3">
             {rest.map((project, i) => (
               <Reveal
                 key={project.slug}

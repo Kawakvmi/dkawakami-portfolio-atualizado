@@ -55,7 +55,7 @@ export function ProjectMedia({
           fill
           sizes={sizes}
           priority={priority}
-          className="object-cover"
+          className={media.fit === "contain" ? "object-contain" : "object-cover"}
         />
       )}
     </div>

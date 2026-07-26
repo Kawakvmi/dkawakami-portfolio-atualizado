@@ -279,6 +279,47 @@ export const projects: Project[] = [
   },
 
   {
+    slug: "design-layout",
+    title: { pt: "Design & Layout", en: "Design & Layout" },
+    subtitle: {
+      pt: "Peças gráficas, brindes e identidade visual",
+      en: "Graphic pieces, merch and visual identity",
+    },
+    year: { pt: "2026", en: "2026" },
+    category: ["Brand & Campaign"],
+    role: {
+      pt: ["Design gráfico", "Layout", "Mockup 3D"],
+      en: ["Graphic design", "Layout", "3D mockup"],
+    },
+    technologies: ["Photoshop", "Illustrator", "Figma"],
+    cover: {
+      type: "image",
+      src: "/media/design-botton-intensivao.png",
+      fit: "contain",
+      alt: {
+        pt: "Botton com arte neon 'Intensivão da Qualidade'",
+        en: "Pin button with neon 'Intensivão da Qualidade' artwork",
+      },
+      width: 6000,
+      height: 4000,
+    },
+    featured: false,
+    hasCaseStudy: true,
+    summary: {
+      pt: "Peças gráficas, brindes e layouts para campanhas e comunicação, do conceito à arte final e ao mockup 3D.",
+      en: "Graphic pieces, merch and layouts for campaigns and communication, from concept to final art and 3D mockup.",
+    },
+    problem: {
+      pt: "Campanhas e ações internas pedem uma linguagem visual marcante que funcione em muitos formatos, do digital ao brinde físico.",
+      en: "Campaigns and internal actions need a striking visual language that works across many formats, from digital to physical merch.",
+    },
+    solution: {
+      pt: "Direção de arte e execução de peças gráficas e brindes, com uma estética consistente que se adapta do banner ao botton, incluindo mockups 3D para aprovação.",
+      en: "Art direction and execution of graphic pieces and merch, with a consistent aesthetic that adapts from banner to pin button, including 3D mockups for approval.",
+    },
+  },
+
+  {
     slug: "corporate-communication",
     title: {
       pt: "Comunicação & Design Corporativo",
