@@ -11,8 +11,8 @@ export const cv = {
   name: "Dereck Biasoli Kawakami",
   title: "Digital Designer & Creative Developer",
   contact: {
-    age: "23 anos",
-    phone: "(16) 99637-2005",
+    age: "25 anos",
+    phone: "(16) 98266-2000",
     email: "dereckkawakami@gmail.com",
     location: "Ribeirão Preto, SP",
     linkedin: "linkedin.com/in/dereck-kawakami-ab08711bb",
@@ -38,7 +38,7 @@ export const cv = {
     {
       course: "Desenvolvedor Front-End",
       school: "EBAC, Escola Britânica de Artes Criativas e Tecnologia",
-      period: "conclusão prevista 01/2026",
+      period: "concluído em 2026",
       highlight: true,
       detail:
         "HTML5, CSS3 (Flexbox, Grid, responsivo), JavaScript (ES6+), consumo de APIs REST, Git e GitHub, introdução a React.js, princípios de UX/UI, acessibilidade, performance e Figma.",
@@ -89,11 +89,6 @@ export const cv = {
 
   /** `highlight: true` marks the courses most relevant to this market. */
   certifications: [
-    {
-      name: "Desenvolvedor Front-End",
-      issuer: "EBAC",
-      highlight: true,
-    },
     {
       name: "Workshop, IA no Audiovisual",
       issuer: "Brainstorm Academy",
