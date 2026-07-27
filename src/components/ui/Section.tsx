@@ -21,7 +21,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn("relative scroll-mt-24 py-24 md:py-36", className)}
+      className={cn("relative scroll-mt-24 py-20 md:py-28", className)}
     >
       {glow && (
         <div

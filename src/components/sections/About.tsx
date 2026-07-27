@@ -106,9 +106,11 @@ export function About({ locale }: { locale: Locale }) {
                   {group.tools.map((tool) => (
                     <li
                       key={tool}
-                      className="text-muted-strong flex items-center gap-3 text-sm"
+                      className="group text-muted-strong hover:text-foreground flex items-center gap-3 text-sm transition-colors"
                     >
-                      <ToolLogo name={tool} size={26} />
+                      <span className="transition-transform duration-300 group-hover:scale-110">
+                        <ToolLogo name={tool} size={26} />
+                      </span>
                       {tool}
                     </li>
                   ))}
